@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#uploadimage{
+    display: none;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+.main h1{
+    font-size: 3vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main form{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5vw;
+}
+.main form .labeluploadimage{
+    padding: 1.2vw 2.4vw;
+    background-color: blue;
+    border-radius: 10px;
+    font-size: 1.3vw;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main form .submit{
+    padding: 1.2vw 2.4vw;
+    border-radius: 15px;
+    font-size: 1.3vw;
+}
+
+/* @media (max-width:829px){
+    .main h1{
+        font-size: 7vw;
+    }
+    .main form{
+        gap: 10vw;
+    }
+    .main form .labeluploadimage{
+        padding: 1.2vw 3.5vw;
+        font-size: 3vw;
+    }
+    .main form .submit{
+        padding: 1.2vw 2.4vw;
+        font-size: 2vw;
+    }
+} */
+@media (max-width:829px) and (min-width:600px) {
+    .main h1{
+        font-size: 7vw;
+    }
+    .main form{
+        gap: 10vw;
+    }
+    .main form .labeluploadimage{
+        padding: 1.2vw 3.5vw;
+        font-size: 3vw;
+    }
+    .main form .submit{
+        padding: 1.2vw 2.4vw;
+        font-size: 2vw;
+    }
+}
+@media (max-width:599px) and (min-width:470px){
+    .main h1{
+        font-size: 10vw;
+    }
+    .main form{
+        gap: 8vw;
+    }
+    .main form .labeluploadimage{
+        padding: 1.2vw 3.5vw;
+        font-size: 6.3vw;
+    }
+    .main form .submit{
+        padding: 1.2vw 2.4vw;
+        font-size: 3.8vw;
+    }
+}
+@media (max-width:469px) and (min-width:320px) {
+    .main h1{
+        font-size: 10vw;
+    }
+    .main form{
+        gap: 8vw;
+    }
+    .main form .labeluploadimage{
+        padding: 1.2vw 3.5vw;
+        font-size: 6.3vw;
+    }
+    .main form .submit{
+        padding: 1.2vw 2.4vw;
+        font-size: 3.8vw;
+    }
+}

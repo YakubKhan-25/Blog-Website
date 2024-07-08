@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+@font-face {
+    font-family: 'tanker';
+    src: url(/images/Tanker_Complete/Fonts/WEB/fonts/Tanker-Regular.woff);
+}
+body{
+    background-image: url("/images/img-1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.main{
+    padding: 8vw 0vw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+}
+.main h1{
+    color: rgb(247, 6, 170);
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    font-family: tanker;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.main form{
+    border: 2px solid white;
+    padding: 2vw 2vw 2vw 2vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+    backdrop-filter: blur(7px);
+}
+.main .title{
+    padding: 1vw 1vw;
+    height: 20%;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: white;
+    font-family:serif;
+    background-color: #1d1d1d;
+}
+.main .textarea{
+    padding: 1vw 1vw;
+    height: 28vh;
+    width: 28vw;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: white;
+    font-family:serif;
+    background-color: #1d1d1d;
+}
+.main .submit{
+    width: 10vw;
+    font-size: 1.2rem;
+    padding: 1vw 0vw;
+    border-radius: 50px;
+    font-weight: 600;
+    background: linear-gradient(150deg, rgb(20, 20, 200), aqua);
+    border: 1px solid aqua;
+    /* border-right: 2px solid white; */
+    /* box-shadow: 0.98vw 0.97vw 1.2vw black; */
+}
+#updatefile{
+    display: none;
+}
+.labelupdatefile{
+    padding: 1vw 2.8vw;
+    background-color: blue;
+    font-size: 1.4vw;
+    color: white;
+    width: 50%;
+    border-radius: 10px;
+}
+@media (max-width:829px){
+    .main form{
+        width: 80%;
+        gap: 1vw;
+        padding: 3vw 2vw 2vw 2vw;
+    }
+    .main .title{
+        padding: 2vw 2.5vw;
+        height: 20%;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .main .textarea{
+        padding: 2vw 2.5vw;
+        height: 28vh;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .main .submit{
+        width: 30%;
+        padding: 2vw 1vw;
+    }
+    .labelupdatefile{
+        padding: 2vw 3vw;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 35%;
+        border-radius: 12px;
+    }
+}
+@media (max-width:829px) and (min-width:600px) {
+    .main form{
+        width: 80%;
+        gap: 1vw;
+        padding: 3vw 2vw 2vw 2vw;
+    }
+    .main .title{
+        padding: 2vw 2.5vw;
+        height: 20%;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .main .textarea{
+        padding: 2vw 2.5vw;
+        height: 28vh;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .main .submit{
+        width: 30%;
+        padding: 2vw 1vw;
+    }
+    .labelupdatefile{
+        padding: 2vw 3vw;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 35%;
+        border-radius: 12px;
+    }
+}
+@media (max-width:599px) and (min-width:470px){
+    .main form{
+        width: 90%;
+        gap: 1.7vw;
+        padding: 3vw 2vw 2vw 2vw;
+    }
+    .main .title{
+        padding: 3vw 2.5vw;
+        height: 20%;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .main .textarea{
+        padding: 3vw 2.5vw;
+        height: 28vh;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .main .submit{
+        width: 30%;
+        padding: 3vw 1vw;
+    }
+    .labelupdatefile{
+        padding: 3vw 2.8vw;
+        font-size: 1.3rem;
+        text-align: center;
+        width: 40%;
+        border-radius: 12px;
+    }
+}
+@media (max-width:469px) and (min-width:320px) {
+
+    .main form{
+        width: 90%;
+        gap: 1.7vw;
+        padding: 3vw 2vw 2vw 2vw;
+    }
+    .main .title{
+        padding: 3vw 2.5vw;
+        height: 20%;
+        width: 100%;
+        font-size: 1.05rem;
+    }
+    .main .textarea{
+        padding: 3vw 2.5vw;
+        height: 28vh;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .main .submit{
+        width: 45%;
+        padding: 3vw 1vw;
+    }
+    .labelupdatefile{
+        padding: 3vw 2.8vw;
+        font-size: 1.2rem;
+        width: 50%;
+        border-radius: 12px;
+    }
+}

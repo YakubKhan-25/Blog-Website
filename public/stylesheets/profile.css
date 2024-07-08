@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'MATTER Light';
+    box-sizing: border-box;
+}
+html,body{
+    height : 100%;
+    width: 100%;
+}
+.main{
+    width: 100%;
+}
+.page1{
+    width: 100%;
+    height: 100%;
+    /* min-height: 100dvh; */
+}
+.page1 .nav{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 3vw;
+}
+.subnav a,i{
+    font-size: 1.35vw;
+    text-decoration: none;
+    color: black;
+}
+
+.subpage1{
+    width: 100%;
+    padding: 15vw 15vw 15vw 13vw;
+}
+
+
+.subpage1 h2{
+    font-size: 1.5vw;
+    font-weight: lighter;
+    letter-spacing: -0.2px;
+}
+.subpage1heading{
+    display: flex;
+    gap: 1.4vw;
+}
+.subpage1heading h1{
+    font-size: 8vw;
+    letter-spacing: -2.5px;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+.subpage1heading h1:hover{
+    color: #000;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.profile:hover a{
+    color: white;
+}
+.profile:hover i{
+    color: white;
+}
+
+.nav .links{
+    position: relative;
+    padding: 0.9vw 0.8vw;
+    overflow: hidden;
+    border-radius: 1.6vw;
+}
+.subnav{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.nav .links::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -6;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    transition: all linear 0.2s;
+    border-radius: 50%;
+}
+.nav .links:hover::after{
+    bottom: 0;
+    transition: all ease 0.4s;
+    border-radius: 0;
+}
+.nav .links:hover{
+    color: white;
+    z-index: 96;
+}
+.nav img{
+    width: 5vw;
+}
+
+/* ------------------------------------------menu bar --------------------------- */
+
+.subnav .menubtn{
+    font-size: 1.2rem;
+    display: none;
+}
+.menu{
+    cursor: pointer;
+}
+.menubar .col{
+    text-decoration: none;
+    color: black;
+}
+.closemenubar{
+    font-size: 7vw;
+    padding: 7vw 8vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.menubar {
+    font-size: 5vw;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fdfdfd;
+    height: 100vh;
+    z-index: 278;
+    overflow: hidden;
+}
+
+.menubar .profile a{
+    text-decoration: none;
+    color: black;
+}
+.menubar .profile:hover a{
+    color: white;
+}
+.menubar .profile:hover i{
+    color: white;
+}
+.menubar .profile i{
+    font-size: 3vw;
+}
+
+.menubar .links{
+    padding: 3vw 5vw;
+    border-radius: 20px;
+}
+.menubar .links{
+    position: relative;
+   overflow: hidden;
+}
+.menubar .links::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -6;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    transition: all linear 0.2s;
+    border-radius: 50%;
+}
+.menubar .links:hover::after{
+    bottom: 0;
+    transition: all ease 0.4s;
+    border-radius: 0;
+}
+.menubar .links:hover{
+    color: white;
+    z-index: 96;
+}
+.nav img{
+    width: 5vw;
+}
+
+
+/* ------------------------------------------Media queries ---------------------- */
+
+@media (max-width:1170px) and (min-width:1020px) {
+    .page1 .nav{
+        padding: 1.7vw 3.4vw;
+    }
+    .nav img{
+        width: 6.7vw;
+    }
+    .subnav a,i{
+        font-size: 1.6vw;
+
+    }
+    .subpage1{
+        width: 100%;
+        padding: 15vw 15vw 15vw 10vw;
+    }
+    .subpage1 h2{
+        font-size: 1.8vw;
+        font-weight: lighter;
+        letter-spacing: -0.2px;
+    }
+    .subpage1heading .hvr{
+        font-size: 9vw;
+    }
+    .subpage1heading h1{
+        color: black;
+    }
+}
+
+
+@media (max-width:1020px) and (min-width:830px) {
+
+    .page1 .nav{
+        padding: 5vw 4vw;
+    }
+    .nav img{
+        width: 9vw;
+    }
+    .subnav a,i{
+        font-size: 2.1vw;
+    }
+    .subpage1{
+        width: 100%;
+        padding: 10vw 5vw 9vw 15vw;
+    }
+    .subpage1 h2{
+        margin-bottom: 1vw;
+        font-size: 3vw;
+        font-weight: lighter;
+        letter-spacing: -0.2px;
+    }
+    .subpage1heading{
+        display: flex;
+        gap: 0vw;
+        flex-direction: column;
+    }
+    .subpage1heading .hvr{
+        font-size: 15vw;
+        display: block;
+    }
+    .subpage1heading h1{
+        color: black;
+    }
+    .subpage1heading #websites{
+        text-align: left;
+    }
+    .subpage1heading #tells{
+       text-align: right;
+       width: 82%;
+
+    }
+}
+
+
+@media (max-width:829px) and (min-width:750px) {
+
+    .page1 .nav{
+        padding: 3.4vw 4.3vw;
+    }
+    .nav img{
+        width: 7.5vw;
+    }
+    .subnav a,i{
+        font-size: 2.5vw;
+    }
+    .subpage1{
+        width: 100%;
+        padding: 11vw 10vw 9vw 15vw;
+    }
+    .subpage1 h2{
+        margin-bottom: 1vw;
+        font-size: 2.8vw;
+        font-weight: lighter;
+        letter-spacing: -0.2px;
+    }
+    .subpage1heading{
+        display: flex;
+        gap: 1vw;
+        flex-direction: column;
+    }
+    .subpage1heading .hvr{
+        font-size: 16vw;
+        display: block;
+    }
+    .subpage1heading #websites{
+        text-align: left;
+    }
+    .subpage1heading #tells{
+       text-align: right;
+       width: 92%;
+
+    }
+    .subpage1heading h1{
+        color: black;
+    }
+}
+
+@media (max-width:749px) and (min-width:600px) {
+
+    .page1 .nav{
+        padding: 4vw 4.3vw;
+    }
+    .nav img{
+        width: 8vw;
+    }
+    .subnav a,i{
+        font-size: 2.7vw;
+    }
+    .subpage1{
+        width: 100%;
+        margin-top: 5vh;
+        padding: 13vw 10vw 9vw 15vw;
+    }
+    .subpage1 h2{
+        margin-bottom: 1vw;
+        font-size: 2.8vw;
+        font-weight: lighter;
+        letter-spacing: -0.2px;
+    }
+    .subpage1heading{
+        display: flex;
+        gap: 1vw;
+        flex-direction: column;
+    }
+    .subpage1heading .hvr{
+        font-size: 17vw;
+        display: block;
+    }
+    .subpage1heading #websites{
+        text-align: left;
+    }
+    .subpage1heading #tells{
+       text-align: left;
+       /* width: 92%; */
+
+    }
+    .subpage1heading h1{
+        color: black;
+    }
+}
+@media (max-width:599px) and (min-width:470px) {
+    
+    
+    .page1 .nav{
+        padding: 5vw 7vw;
+    }
+    .nav img{
+        width: 11vw;
+    }
+    .subnav .links{
+        display: none;
+    }
+    .subnav .menubtn{
+        font-size: 4.5vw;
+        display: block;
+    }
+    .subpage1{
+        width: 100%;
+        margin-top: 5vh;
+        padding: 13vw 10vw 9vw 15vw;
+    }
+    .subpage1 h2{
+        margin-bottom: 1vw;
+        font-size: 4.2vw;
+        font-weight: lighter;
+        letter-spacing: -0.2px;
+    }
+    .subpage1heading{
+        display: flex;
+        gap: 3vw;
+        flex-direction: column;
+    }
+    .subpage1heading .hvr{
+        font-size: 18vw;
+        display: block;
+    }
+    .subpage1heading #websites{
+        text-align: left;
+    }
+    .subpage1heading #tells{
+       text-align: left;
+    }
+    .subpage1heading h1{
+        color: black;
+    }
+}
+
+@media (max-width:469px) and (min-width:320px) {
+
+    .page1 .nav{
+        padding: 8vw 7vw;
+    }
+    .nav img{
+        width: 19vw;
+    }
+    .subnav .links{
+        display: none;
+    }
+    .subnav .menubtn{
+        font-size: 5.7vw;
+        display: block;
+    }
+    .subpage1{
+        width: 100%;
+        margin-top: 5vh;
+        padding: 13vw 0vw 9vw 5vw;
+    }
+    .subpage1 h2{
+        margin-bottom: 2vw;
+        font-size: 4.9vw;
+        font-weight: lighter;
+        letter-spacing: -0.2px;
+    }
+    .subpage1heading{
+        display: flex;
+        gap: 4.6vw;
+        flex-direction: column;
+    }
+    .subpage1heading .hvr{
+        font-size: 25vw;
+        display: block;
+    }
+    .subpage1heading #websites{
+        text-align: left;
+    }
+    .subpage1heading #tells{
+       text-align: right;
+       width: 52%;
+    }
+    .subpage1heading h1{
+        color: black;
+    }
+}

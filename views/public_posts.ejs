@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/publicposts.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Inline+Text:wght@100..900&family=Jaldi:wght@400;700&family=Jockey+One&family=Jura:wght@700&family=Tenor+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <div class="leftmain"></div>
+        <div class="middlemain">
+            <div class="middlemain_header">
+                <img src="/images/uploads/<%= user.profilepic %>" alt="err">
+                <h2 class="tenor-sans-regular">Start with a New Post</h2>
+            </div>
+            <div class="postsec">
+                <% if (allPosts.length > 0) { %>
+                    <% allPosts.forEach(function(post) { %>
+                        <div class="posts">
+                            <h3>@<%= post.username %></h3>
+                            <h4 class="posttitle"><%= post.title %></h4>
+                            <p class="tenor-sans-regular"><%= post.content %></p>
+                            <div class="postimageblock">
+                                <img src="/images/posts-img/<%= post.postimg %>" alt="err">
+                            </div>
+                            <div class="postlikes">
+                                <small><%= post.likes.length %></small>
+                                <small>Likes</small>
+                            </div>
+                            <div class="seperate">
+                                <div class="subposts">
+                                    <a class="a1" href="/like/<%= post._id %>">
+                                        <%= post.likes.indexOf(currentUser._id) === -1 ? "Like" : "Unlike" %>
+                                    </a>
+                                    <!-- <a class="a2" href="#">Comments</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    <% }) %>
+                <% } else { %>
+                    <p>No posts available.</p>
+                <% } %>
+            </div>
+        </div>
+        <div class="rightmain"></div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <div class="layout__right-sidebar">
+          <div class="trends-for-you">
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__heading">
+                Trends for you
+              </div>
+            </div>
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__meta-information">
+                Trending in Germany
+              </div>
+              <div class="trends-for-you__trend-name">
+                #iPhone12
+              </div>
+              <div class="trends-for-you__meta-information">
+                155k Tweets
+              </div>
+            </div>
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__meta-information">
+                Trending in Germany
+              </div>
+              <div class="trends-for-you__trend-name">
+                #AmazonPrimeDay
+              </div>
+            </div>
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__meta-information">
+                Trending - Trending
+              </div>
+              <div class="trends-for-you__trend-name">
+                #autos
+              </div>
+              <div class="trends-for-you__meta-information">
+                2,800 Tweets
+              </div>
+            </div>
+          </div>
+          <div class="who-to-follow">
+            <div class="who-to-follow__block">
+              <div class="who-to-follow__heading">
+                Who to follow
+              </div>
+            </div>
+            <div class="who-to-follow__block">
+              <img
+                class="who-to-follow__author-logo"
+                src="./images/profile-image-1.jpg"
+              />
+              <div class="who-to-follow__content">
+                <div>
+                  <div class="who-to-follow__author-name">
+                    Becki (& Chris)
+                  </div>
+                  <div class="who-to-follow__author-slug">
+                    @beckiandchris
+                  </div>
+                </div>
+                <div class="who-to-follow__button">
+                  Follow
+                </div>
+              </div>
+            </div>
+            <div class="who-to-follow__block">
+              <img
+                class="who-to-follow__author-logo"
+                src="./images/profile-image-2.png"
+              />
+              <div class="who-to-follow__content">
+                <div>
+                  <div class="who-to-follow__author-name">
+                    Elixir Digest
+                  </div>
+                  <div class="who-to-follow__author-slug">
+                    @elixirdigest
+                  </div>
+                </div>
+                <div class="who-to-follow__button">
+                  Follow
+                </div>
+              </div>
+            </div>
+
+            <div class="who-to-follow__block">
+              <img
+                class="who-to-follow__author-logo"
+                src="./images/profile-image-3.jpg"
+              />
+              <div class="who-to-follow__content">
+                <div>
+                  <div class="who-to-follow__author-name">
+                    Chris Martin
+                  </div>
+                  <div class="who-to-follow__author-slug">
+                    @chris_martin
+                  </div>
+                </div>
+                <div class="who-to-follow__button">
+                  Follow
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->

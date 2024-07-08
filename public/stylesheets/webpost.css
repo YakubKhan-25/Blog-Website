@@ -1,0 +1,745 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    /* background: linear-gradient(to right,rgb(157, 0, 157), rgb(1, 15, 2)); */
+    
+}
+.jockey-one-regular {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .main{
+      /* background-color: black; */
+      
+    color: white;
+}
+.main .page1{
+    /* min-height: 100vh; */
+    height: 100%;
+    width: 100%;
+    color: white;
+    /* background-image: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Colorful-Circle-Simple-Background-Image-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+.page1 .nav{
+    height: 70px;
+    padding: 4vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: violet; */
+}
+.nav img{
+    /* height: 4vw; */
+   width: 4vw;
+    filter: drop-shadow(1vw 0.6vw 0.9vw rgb(39, 39, 39));
+}
+.subnav{
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+}
+.subnav .linksec a{
+    text-decoration: none;
+    font-size: 1.6vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.5vw 0.2vw;
+    border-radius: 1.8vw;
+    color: black;
+    
+}
+.subnav .links{
+    padding: 0.7vw 0.7vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2vw;
+}
+.subnav .links::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -6;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    transition: all linear 0.3s;
+    border-radius: 50%;
+}
+.subnav .links:hover::after{
+    bottom: 0;
+    transition: all ease 0.5s;
+    border-radius: 0;
+}
+.subnav .links:hover{
+    color: white;
+    z-index: 96;
+}
+.linksec:hover a{
+    color: white;
+}
+.linksec:hover i{
+    color: white;
+}
+
+.linksec i{
+    /* z-index: 45; */
+    font-size: 1.3vw;
+    color: black;
+}
+.section{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subsection{ 
+    height: 100%;
+    width: 55%;
+    /* background-color: yellow; */
+}
+.msg{
+    letter-spacing: 0.12vw;
+    line-height: 3.5vw;
+    /* filter: drop-shadow(1vw 1.1vw 0.25vw black); */
+}
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.header p{
+    font-size: 1.1vw;
+    text-align: center;
+    width: 48%;   
+}
+#txt{
+    border-radius: 1vw;
+}
+.header{
+    color: black;
+    padding: 2vw 5vw;
+}
+.subhead{
+    display: flex;
+    align-items: center;
+    gap: 1.1vw;
+    margin-bottom: 2px;
+}
+.subhead img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.input{
+    padding: 2vw 5vw;
+}
+.input #txt{
+    height: 15vh;
+    width: 100%;
+    font-size: 1.4vw;
+    padding: 1vw 1.5vw;
+    background-color: transparent;
+    color: grey;
+}
+.input{
+    position: relative;
+}
+.input .title{
+    height: 8vh;
+    width: 100%;
+    font-size: 1.4vw;
+    padding: 1vw 1.5vw;
+    background-color: transparent;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 1vw;
+    margin-bottom: 1.5vh;
+}
+ #uploadpostimage{
+    display: none;
+}
+.divlabel{
+    padding: 0.7vw 0.6vw;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.labeluploadpostimage{
+    color: rgb(249, 247, 247);
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    font-size: 1.05rem;
+    background-color: rgb(4, 0, 255);
+    text-align: right;
+}
+.posttitle{
+    color: white;
+    padding: 0vw 0.4vw;
+    margin-bottom: 0.7vw;
+    font-size: 1.3vw;
+    opacity: 0.9;
+    font-family: sans-serif;
+}
+.postimageblock{
+    height: 100%;
+    width: 100%;
+    padding: 0vw 0.4vw;
+    margin-bottom: 12px;
+}
+.postimageblock img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.postsec{
+    width: 100%;
+    position: relative;
+    padding: 1.8vw 5.3vw;
+}
+.tenor-sans-regular {
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.postsec h2{
+    color: grey;
+    letter-spacing: 0.05vw;
+}
+.posts{
+    height: inherit;
+    margin: 1.5vw 0vw;
+    padding: 0.5vw 1.2vw;
+    background-color: rgb(35, 34, 34);
+    border-radius: 1vw;
+    border: 1px solid rgb(56, 56, 56);
+}
+.posts h3{
+    color: blue;
+    padding: 0vw 0.4vw;
+    margin-bottom: 1vw;
+    font-size: 1.3vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.9;
+    /* padding: 1vw 1vw; */
+}
+.posts p{
+    font-size: 1.4vw;
+    padding: 0.1vw 0.4vw;
+    margin-bottom: 1vw;
+}
+.subposts{
+    padding: 0.9vw 0.5vw;
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;   
+}
+.subposts .a1,.a2{
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+.a1{
+    color: blue;
+}
+.a2{
+    color: grey;
+}
+.seperate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.a3{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: blue;
+}
+.postlikes{
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+    margin-left: 0.5vw;
+    /* padding: 0.9vw 0.5vw; */
+    font-size: 1.2vw;
+    display: inline-block;
+}
+
+.input .submit{
+    margin: 0.8vw 0vw;
+    font-size: 1.2vw;
+    padding: 0.8vw 1.3vw;
+    border-radius: 1.4vw;
+    position: relative;
+    background-color: rgb(15, 15, 15);
+    color: rgb(255, 0, 98);
+    border: 1px solid blue;
+}
+
+/* .input .submit::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -6;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    transition: all linear 0.3s;
+    border-radius: 50%;
+}
+.input .submit:hover::after{
+    bottom: 0;
+    transition: all ease 0.5s;
+    border-radius: 0;
+}
+ */
+
+ @media (max-width:1170px) and (min-width:1020px) {
+    .nav img{
+        width: 4.2vw;
+    }
+    .subsection{
+        height: 100%;
+        width: 57%;
+    }
+   .subnav .linksec a{
+    font-size: 1.8vw;
+   }
+   .section{
+    padding-top: 2vh;
+   }
+   .subhead img{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.header p{
+    font-size: 1.5vw;
+    text-align: center;
+    width: 62%;   
+}
+}
+
+
+@media (max-width:1020px) and (min-width:830px) {
+
+    .page1 .nav{
+        padding: 6vw 4vw;
+    }
+    .nav img{
+        width: 6vw;
+    }
+
+    .subsection{
+        height: 100%;
+        width: 70%;
+    }
+   .subnav .linksec a{
+    font-size: 2.5vw;
+   }
+    .linksec i{
+        font-size: 2vw;
+    }
+   .section{
+    padding-top: 3vh;
+   }
+   .subhead{
+    gap: 1.5vw;
+   }
+   .subhead img{
+    height: 57px;
+    width: 57px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.header p{
+    font-size: 1.8vw;
+    text-align: center;
+    width: 62%;
+}
+.input .title{
+    height: 8.2vh;
+    width: 100%;
+    font-size: 2vw;
+}
+.input #txt{
+    height: 17vh;
+    width: 100%;
+    font-size: 2vw;  
+}
+.input .submit{
+    font-size: 2vw;
+}
+.posts h3{
+    font-size: 1.7vw;
+}.posts h4{
+    font-size: 1.7vw;
+}
+.posts p{
+    font-size: 1.7vw;
+}
+.posts .postlikes{
+    font-size: 1.8vw;
+}
+.subposts .a1{
+    font-size: 2vw;
+}
+.subposts .a2{
+    font-size: 2vw;
+}
+.seperate .a3{
+    font-size: 2vw;
+}
+}
+
+
+@media (max-width:829px) and (min-width:750px) {
+
+    .page1 .nav{
+        padding: 6vw 4vw;
+    }
+    .nav img{
+        width: 6vw;
+    }
+
+    .subsection{
+        height: 100%;
+        width: 70%;
+    }
+   .subnav .linksec a{
+    font-size: 2.5vw;
+   }
+    .linksec i{
+        font-size: 2vw;
+    }
+   .section{
+    padding-top: 3vh;
+   }
+   .subhead{
+    gap: 1.5vw;
+   }
+   .subhead img{
+    height: 57px;
+    width: 57px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.header p{
+    font-size: 1.8vw;
+    text-align: center;
+    width: 62%;
+}
+.input .title{
+    height: 8.2vh;
+    width: 100%;
+    font-size: 2vw;
+}
+.input #txt{
+    height: 17vh;
+    width: 100%;
+    font-size: 2vw;  
+}
+.input .submit{
+    font-size: 2vw;
+}
+.posts h3{
+    font-size: 1.7vw;
+}.posts h4{
+    font-size: 1.7vw;
+}
+.posts p{
+    font-size: 1.7vw;
+}
+.posts .postlikes{
+    font-size: 1.8vw;
+}
+.subposts .a1{
+    font-size: 2vw;
+}
+.subposts .a2{
+    font-size: 2vw;
+}
+.seperate .a3{
+    font-size: 2vw;
+}
+}
+
+@media (max-width:749px) and (min-width:600px) {
+ /* change nav */
+   
+ .page1 .nav{
+    padding: 6vw 5vw;
+}
+.nav img{
+    width: 7vw;
+}
+.subnav .hide{
+    display: none;
+}
+.subnav .home{
+    gap: 1.2vw;
+
+}
+.subsection{
+    height: 100%;
+    width: 83%;
+}
+.subnav .linksec a{
+font-size: 2.8vw;
+}
+.linksec i{
+    font-size: 2.3vw;
+}
+.section{
+padding-top: 4vh;
+}
+.subhead{
+gap: 1.6vw;
+}
+.subhead img{
+height: 60px;
+width: 60px;
+border-radius: 50%;
+object-fit: cover;
+object-position: center;
+}
+.header{
+    gap: -0.7vw;
+}
+.header p{
+font-size: 2.5vw;
+text-align: center;
+width: 72%;
+}
+.input .title{
+height: 8.5vh;
+width: 100%;
+font-size: 3vw;
+}
+.input #txt{
+height: 20vh;
+width: 100%;
+font-size: 3vw;  
+}
+.input .submit{
+font-size: 2.8vw;
+padding: 1.3vw 1.8vw;
+}
+.posts h3{
+padding: 0.5vw 0.4vw;
+font-size: 2.3vw;
+}.posts h4{
+padding: 0.5vw 0.4vw;
+font-size: 2.3vw;
+}
+.posts p{
+padding: 0.5vw 0.4vw;
+font-size: 2.3vw;
+}
+.posts .postlikes{
+font-size: 2.4vw;
+}
+.subposts .a1{
+font-size: 3vw;
+}
+.subposts .a2{
+font-size: 3vw;
+}
+.seperate .a3{
+font-size: 3vw;
+}
+}
+
+@media (max-width:599px) and (min-width:470px) {
+   
+    .page1 .nav{
+        padding: 6vw 5vw;
+    }
+    .nav img{
+        width: 9vw;
+    }
+    .subnav .hide{
+        display: none;
+    }
+    .subnav .home{
+        gap: 1.2vw;
+        
+    }
+    .subsection{
+        height: 100%;
+        width: 94%;
+    }
+    .subnav .linksec a{
+    font-size: 3.5vw;
+    }
+    .linksec i{
+        font-size: 3.2vw;
+    }
+    .section{
+    padding-top: 4vh;
+    }
+    .subhead{
+    gap: 1.8vw;
+    }
+    .subhead img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    }
+    .header{
+        gap: -0.7vw;
+    }
+    .header p{
+    font-size: 3.2vw;
+    text-align: center;
+    width: 78%;
+    }
+    .input .title{
+    height: 8.5vh;
+    width: 100%;
+    font-size: 3.6vw;
+    }
+    .input #txt{
+    height: 20vh;
+    width: 100%;
+    font-size: 3.6vw;  
+    }
+    .input .submit{
+    font-size: 3vw;
+    padding: 1.6vw 2vw;
+    }
+    .posts h3{
+    padding: 0.5vw 0.4vw;
+    font-size: 3vw;
+    }.posts h4{
+    padding: 0.5vw 0.4vw;
+    font-size: 3vw;
+    }
+    .posts p{
+    padding: 0.5vw 0.4vw;
+    font-size: 3vw;
+    }
+    .posts .postlikes{
+    font-size: 3.1vw;
+    }
+    .subposts .a1{
+    font-size: 3.8vw;
+    }
+    .subposts .a2{
+    font-size: 3.8vw;
+    }
+    .seperate .a3{
+    font-size: 3.8vw;
+    }
+}
+
+@media (max-width:469px) and (min-width:320px) {
+
+    .page1 .nav{
+        padding: 6vw 5vw;
+    }
+    .nav img{
+        width: 12vw;
+    }
+    .subnav .hide{
+        display: none;
+    }
+    .subnav .home{
+        gap: 1.2vw;   
+    }
+    .subsection{
+        height: 100%;
+        width: 100%;
+    }
+    .subnav .linksec a{
+    font-size: 4.5vw;
+    }
+    .linksec i{
+        font-size: 4vw;
+    }
+    .section{
+    padding-top: 4vh;
+    }
+    .subhead{
+    gap: 1.9vw;
+    }
+    .subhead h1{
+        font-size: 7vw;
+    }
+    .subhead img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    }
+    .header{
+        gap: -0.7vw;
+    }
+    .header p{
+    font-size: 4.3vw;
+    text-align: center;
+    width: 88%;
+    }
+    .input .title{
+    height: 8.5vh;
+    width: 100%;
+    font-size: 5vw;
+    }
+    .input #txt{
+    height: 20vh;
+    width: 100%;
+    font-size: 5vw;  
+    }
+    .input .submit{
+    font-size: 4.5vw;
+    padding: 1.6vw 2vw;
+    }
+    .posts h3{
+    padding: 0.5vw 0.4vw;
+    font-size: 4.2vw;
+    }.posts h4{
+    padding: 0.5vw 0.4vw;
+    font-size: 4.2vw;
+    }
+    .posts p{
+    padding: 0.5vw 0.4vw;
+    font-size: 4.2vw;
+    }
+    .posts .postlikes{
+    font-size: 4.3vw;
+    }
+    .seperate{
+        padding-top: 0.8vh;
+    }
+    .subposts{
+        gap: 3.5vw;
+    }
+    .subposts .a1{
+    font-size: 4.8vw;
+    }
+    .subposts .a2{
+    font-size: 4.8vw;
+    }
+    .seperate .a3{
+    font-size: 4.8vw;
+    }
+}
