@@ -27,17 +27,3 @@ gsap.from("#txt",{
     delay:0.1,
     duration:0.5,
 })
-// gsap.from(".posts",{
-//     y:50,
-//     opacity:0,
-//     stagger:0.2,
-//     delay:0.1,
-//     duration:0.4,
-//     // scrollTrigger:{
-//     //     trigger:".posts",
-//     //     pin:true,
-//     //     start : "5",
-//     //     end:"20",
-//     //     scrub : 1,
-//     // }
-// })

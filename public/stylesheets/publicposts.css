@@ -30,17 +30,14 @@ html,body{
 .leftmain{
     height: 100vh;
     width: 30%;
-    /* background-color: aqua; */
 }
 .middlemain{
     height: 100vh;
     width: 40%;
-    /* background-color: yellow; */
 }
 .rightmain{
     height: 100vh;
     width: 30%;
-    /* background-color: violet; */
 }
 .middlemain_header{
     display: flex;

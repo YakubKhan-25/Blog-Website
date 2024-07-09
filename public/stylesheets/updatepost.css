@@ -71,8 +71,6 @@ body{
     font-weight: 600;
     background: linear-gradient(150deg, rgb(20, 20, 200), aqua);
     border: 1px solid aqua;
-    /* border-right: 2px solid white; */
-    /* box-shadow: 0.98vw 0.97vw 1.2vw black; */
 }
 #updatefile{
     display: none;

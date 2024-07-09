@@ -42,23 +42,6 @@ html,body{
     border-radius: 15px;
     font-size: 1.3vw;
 }
-
-/* @media (max-width:829px){
-    .main h1{
-        font-size: 7vw;
-    }
-    .main form{
-        gap: 10vw;
-    }
-    .main form .labeluploadimage{
-        padding: 1.2vw 3.5vw;
-        font-size: 3vw;
-    }
-    .main form .submit{
-        padding: 1.2vw 2.4vw;
-        font-size: 2vw;
-    }
-} */
 @media (max-width:829px) and (min-width:600px) {
     .main h1{
         font-size: 7vw;

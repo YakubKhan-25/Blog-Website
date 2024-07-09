@@ -8,8 +8,6 @@
 html,body{
     height: 100%;
     width: 100%;
-    /* background-color: black; */
-    /* background: linear-gradient(to right,rgb(157, 0, 157), rgb(1, 15, 2)); */
     
 }
 .jockey-one-regular {
@@ -18,8 +16,6 @@ html,body{
     font-style: normal;
   }
   .main{
-      /* background-color: black; */
-      
     color: white;
 }
 .main .page1{
@@ -27,10 +23,6 @@ html,body{
     height: 100%;
     width: 100%;
     color: white;
-    /* background-image: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Colorful-Circle-Simple-Background-Image-1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
 }
 .page1 .nav{
     height: 70px;
@@ -286,25 +278,6 @@ html,body{
     color: rgb(255, 0, 98);
     border: 1px solid blue;
 }
-
-/* .input .submit::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -6;
-    background-color: black;
-    left: 0;
-    bottom: -100%;
-    transition: all linear 0.3s;
-    border-radius: 50%;
-}
-.input .submit:hover::after{
-    bottom: 0;
-    transition: all ease 0.5s;
-    border-radius: 0;
-}
- */
 
  @media (max-width:1170px) and (min-width:1020px) {
     .nav img{
