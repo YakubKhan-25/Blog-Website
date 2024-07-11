@@ -22,3 +22,7 @@ Coding : Visual Studio Code
 Version Control : Git and GitHub
 API Testing : Postman
 Cross-Browser Testing : Browser Developer Tools
+
+
+
+NOTE :  you can run this entire project in terminal by writing : npx nodemon yk.js
