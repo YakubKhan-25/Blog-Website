@@ -25,5 +25,5 @@ Cross-Browser Testing : Browser Developer Tools
 
 
 
-NOTE : 1. you can run this entire project in terminal by writing : npx nodemon yk.js 
-       2. Go to chrome write : localhost:3000 then you'll see my project.
+NOTE : Step 1. you can run this entire project in terminal by writing : npx nodemon yk.js 
+       Step 2. Go to chrome write : localhost:3000 then you'll see my project.
